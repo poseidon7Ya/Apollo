@@ -10,7 +10,7 @@ public class BubbleSort extends AbstractSort {
             boolean flag = false;
             for (int j = 0; j < n - i - 1; j++) {
                 if (a[j] > a[j + 1]) {
-                    swap(j, j + 1, a);
+                    swap(a, j, j + 1);
                     flag = true;
                 }
             }
