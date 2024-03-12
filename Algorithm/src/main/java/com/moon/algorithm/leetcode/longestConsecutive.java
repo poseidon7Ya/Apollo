@@ -1,4 +1,4 @@
-package com.leetcode.offer;
+package com.moon.algorithm.leetcode;
 
 import java.util.Arrays;
 

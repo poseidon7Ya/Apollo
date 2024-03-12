@@ -1,4 +1,4 @@
-package Base.search;
+package com.moon.algorithm.base.search;
 
 public abstract class AbstractSearch implements Search {
 

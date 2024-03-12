@@ -1,4 +1,4 @@
-package Base.sort;
+package com.moon.algorithm.base.sort;
 
 public class QuickSort extends AbstractSort {
     @Override

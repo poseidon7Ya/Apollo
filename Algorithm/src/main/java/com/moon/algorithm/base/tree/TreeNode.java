@@ -1,4 +1,4 @@
-package Tree;
+package com.moon.algorithm.base.tree;
 
 public class TreeNode {
     int val;

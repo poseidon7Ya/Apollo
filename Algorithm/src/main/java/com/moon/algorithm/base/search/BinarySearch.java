@@ -1,4 +1,4 @@
-package Base.search;
+package com.moon.algorithm.base.search;
 
 public class BinarySearch extends AbstractSearch {
     @Override

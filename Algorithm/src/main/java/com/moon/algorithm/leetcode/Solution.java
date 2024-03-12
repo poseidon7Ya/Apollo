@@ -1,4 +1,4 @@
-package Array;
+package com.moon.algorithm.leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

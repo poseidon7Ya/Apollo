@@ -1,4 +1,4 @@
-package Tree;
+package com.moon.algorithm.base.tree;
 
 import java.util.ArrayList;
 import java.util.List;

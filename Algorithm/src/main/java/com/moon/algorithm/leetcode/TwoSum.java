@@ -1,10 +1,11 @@
-package Array;
+package com.moon.algorithm.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * 两数之和
+ * <a href="https://leetcode.cn/problems/two-sum/description/">...</a>
  */
 public class TwoSum {
 

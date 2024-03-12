@@ -1,4 +1,4 @@
-package Base.sort;
+package com.moon.algorithm.base.sort;
 
 /**
  * 冒泡排序

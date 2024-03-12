@@ -1,4 +1,4 @@
-package Base.sort;
+package com.moon.algorithm.base.sort;
 
 public abstract class AbstractSort implements Sort {
     public void swap(int[] a, int i, int j) {
