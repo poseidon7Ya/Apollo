@@ -11,7 +11,7 @@ import java.util.Map;
  * 他数字都出现了两次，请找出这个唯一只出现一次的数字。例如，
  * 在数组[1，1，2，2，3，4，4，5，5]中，数字3只出现了一次。
  */
-public class SingleNonDuplicate implements Search {
+public class SingleNonDuplicate70 implements Search {
     @Override
     public int search(int[] a, int target) {
         return solution3(a, target);
@@ -33,6 +33,12 @@ public class SingleNonDuplicate implements Search {
         return -1;
     }
 
+    /**
+     * 异或
+     * @param a
+     * @param target
+     * @return
+     */
     private int solution2(int[] a, int target) {
         int result = a[0];
         for (int i = 1; i < a.length; i++) {
@@ -45,13 +51,13 @@ public class SingleNonDuplicate implements Search {
         // int[] c = new int[]{1, 1, 2, 2, 3, 3, 4, 5, 5};
         // [1,1] [2,2] [3,3] [4,5] [5] mid = 4
         int n = a.length;
-        int low = 0, high = n - 1;
+        int low = 0, high = n / 2;
         while (low <= high) {
             int mid = low + ((high - low) >> 1);
             int i = mid * 2;
             if ((i < n - 1) && (a[i] != a[i + 1])) {
                 if (mid == 0 || a[i - 2] == a[i - 1]) {
-                    return a[mid];
+                    return a[i];
                 }
                 high = mid - 1;
             } else {

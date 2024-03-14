@@ -2,7 +2,7 @@ package com.moon.algorithm.base;
 
 import com.moon.algorithm.base.search.Search;
 import com.moon.algorithm.base.sort.Sort;
-import com.moon.algorithm.offer.SingleNonDuplicate;
+import com.moon.algorithm.offer.SingleNonDuplicate70;
 
 import java.util.Arrays;
 
@@ -13,7 +13,7 @@ public class TestClass {
         int[] c = new int[]{1, 1, 2, 2, 3, 3, 4, 5, 5};
 //        sort(new QuickSort(), a);
 //        sort2(a);
-        biS(new SingleNonDuplicate(), c, 0);
+        biS(new SingleNonDuplicate70(), c, 0);
     }
 
     public static void biS(Search search, int[] a, int target) {
