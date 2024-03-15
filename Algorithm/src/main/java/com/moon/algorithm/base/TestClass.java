@@ -5,10 +5,10 @@ import com.moon.algorithm.base.search.Search;
 import com.moon.algorithm.base.sort.Sort;
 import com.moon.algorithm.base.string.StrInterface;
 import com.moon.algorithm.leetcode.str.FindAnagrams;
-import com.moon.algorithm.offer.string.CheckInclusion14_1;
+import com.moon.algorithm.offer.string.lengthOfLongestSubString16;
+import com.moon.algorithm.offer.string.lengthOfLongestSubString16_1;
 
 import java.util.Arrays;
-import java.util.Map;
 
 public class TestClass {
     public static void main(String[] args) {
@@ -19,11 +19,11 @@ public class TestClass {
 //        sort2(a);
 //        biS(new SingleNonDuplicate70(), c, 0);
 //        str();
-        biS(new FindAnagrams(), "cbaebabacd", "abc");
+        biS(new lengthOfLongestSubString16_1(), "cbaebabacd", "abc");
     }
 
     public static void biS(StrInterface strInterface, String s, String p) {
-        System.out.println(JSONObject.toJSONString(strInterface.findAnagrams(s, p)));
+        System.out.println(JSONObject.toJSONString(strInterface.longestSubString(s)));
     }
 
     public static void biS(Search search, int[] a, int target) {

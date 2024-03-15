@@ -20,14 +20,16 @@ public class FindAnagrams extends AbstractString {
         int pLen = p.length();
         for (int i = 0; i < pLen; i++) {
             pMap.merge(p.charAt(i), 1, Integer::sum);
+            // 这一步初始化了 s 字符滑动窗口
             pMap.merge(s.charAt(i), -1, Integer::sum);
         }
         if (allZero(pMap)) {
             indexList.add(0);
         }
         for (int i = pLen; i < s.length(); i++) {
-            pMap.merge(s.charAt(i), -1, Integer::sum);
-            pMap.merge(s.charAt(i - pLen), 1, Integer::sum);
+            // 往右移动窗口
+            pMap.merge(s.charAt(i), -1, Integer::sum); // 新字符
+            pMap.merge(s.charAt(i - pLen), 1, Integer::sum); // 旧字符
             if (allZero(pMap)) {
                 indexList.add(i - pLen + 1);
             }
