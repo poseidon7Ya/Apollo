@@ -1,10 +1,14 @@
 package com.moon.algorithm.base;
 
+import com.alibaba.fastjson.JSONObject;
 import com.moon.algorithm.base.search.Search;
 import com.moon.algorithm.base.sort.Sort;
-import com.moon.algorithm.offer.SingleNonDuplicate70;
+import com.moon.algorithm.base.string.StrInterface;
+import com.moon.algorithm.leetcode.str.FindAnagrams;
+import com.moon.algorithm.offer.string.CheckInclusion14_1;
 
 import java.util.Arrays;
+import java.util.Map;
 
 public class TestClass {
     public static void main(String[] args) {
@@ -13,7 +17,13 @@ public class TestClass {
         int[] c = new int[]{1, 1, 2, 2, 3, 3, 4, 5, 5};
 //        sort(new QuickSort(), a);
 //        sort2(a);
-        biS(new SingleNonDuplicate70(), c, 0);
+//        biS(new SingleNonDuplicate70(), c, 0);
+//        str();
+        biS(new FindAnagrams(), "cbaebabacd", "abc");
+    }
+
+    public static void biS(StrInterface strInterface, String s, String p) {
+        System.out.println(JSONObject.toJSONString(strInterface.findAnagrams(s, p)));
     }
 
     public static void biS(Search search, int[] a, int target) {

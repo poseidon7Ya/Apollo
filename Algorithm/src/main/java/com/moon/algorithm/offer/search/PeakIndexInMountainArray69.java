@@ -1,4 +1,4 @@
-package com.moon.algorithm.offer;
+package com.moon.algorithm.offer.search;
 
 import com.moon.algorithm.base.search.BiSearchFstEqOrGe;
 import com.moon.algorithm.base.search.Search;
