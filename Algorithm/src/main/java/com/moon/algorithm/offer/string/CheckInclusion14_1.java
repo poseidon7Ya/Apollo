@@ -23,7 +23,7 @@ import java.util.Map;
  */
 public class CheckInclusion14_1 extends AbstractString {
     @Override
-    public boolean check(String s1, String s2) {
+    public boolean anagrams(String s1, String s2) {
         if (s2.length() < s1.length()) return false;
         Map<Character, Integer> map = new HashMap<>(0);
         for (int i = 0; i < s1.length(); i++) {
@@ -42,14 +42,5 @@ public class CheckInclusion14_1 extends AbstractString {
             }
         }
         return false;
-    }
-
-    private boolean allZero(int[] counts) {
-        for (int count : counts) {
-            if (count != 0) {
-                return false;
-            }
-        }
-        return true;
     }
 }

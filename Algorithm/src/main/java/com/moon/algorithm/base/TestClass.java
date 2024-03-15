@@ -4,9 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.moon.algorithm.base.search.Search;
 import com.moon.algorithm.base.sort.Sort;
 import com.moon.algorithm.base.string.StrInterface;
-import com.moon.algorithm.leetcode.str.FindAnagrams;
-import com.moon.algorithm.offer.string.lengthOfLongestSubString16;
-import com.moon.algorithm.offer.string.lengthOfLongestSubString16_1;
+import com.moon.algorithm.offer.string.IsPalindrome18;
 
 import java.util.Arrays;
 
@@ -19,11 +17,16 @@ public class TestClass {
 //        sort2(a);
 //        biS(new SingleNonDuplicate70(), c, 0);
 //        str();
-        biS(new lengthOfLongestSubString16_1(), "cbaebabacd", "abc");
+//        biS(new lengthOfLongestSubString16_1(), "cbaebabacd", "abc");
+        palindrome(new IsPalindrome18(), "A man, a plan, a canal: Panama", "");
     }
 
     public static void biS(StrInterface strInterface, String s, String p) {
         System.out.println(JSONObject.toJSONString(strInterface.longestSubString(s)));
+    }
+
+    public static void palindrome(StrInterface strInterface, String s, String p) {
+        System.out.println(JSONObject.toJSONString(strInterface.palindrome(s)));
     }
 
     public static void biS(Search search, int[] a, int target) {

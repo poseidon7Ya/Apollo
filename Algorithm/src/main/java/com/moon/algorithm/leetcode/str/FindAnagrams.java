@@ -8,12 +8,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * find-all-anagrams-in-a-string
  * <a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/">...</a>
  * s = "cbaebabacd", p = "abc"
  */
 public class FindAnagrams extends AbstractString {
     @Override
-    public List<Integer> findAnagrams(String s, String p) {
+    public <T> List<T> anagramsList(String s, String p) {
         if (s.length() < p.length()) return new ArrayList<>();
         Map<Character, Integer> pMap = new HashMap<>();
         List<Integer> indexList = new ArrayList<>();
@@ -34,6 +35,6 @@ public class FindAnagrams extends AbstractString {
                 indexList.add(i - pLen + 1);
             }
         }
-        return indexList;
+        return (List<T>) indexList;
     }
 }

@@ -4,12 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface StrInterface extends CharSequence {
-    default boolean check(String s1, String s2) {
+
+    default boolean anagrams(String s1, String s2) {
         return false;
     }
-
-    default List<Integer> findAnagrams(String s, String p) {
+    default <T> List<T> anagramsList(String s1, String s2) {
         return new ArrayList<>();
+    }
+
+    default boolean palindrome(String s) {
+        return false;
     }
 
     default Integer longestSubString(String s) {

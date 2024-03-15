@@ -1,10 +1,6 @@
 package com.moon.algorithm.offer.string;
 
 import com.moon.algorithm.base.string.AbstractString;
-import org.apache.commons.lang3.StringUtils;
-
-import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 字符串中的变位词
@@ -24,7 +20,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class CheckInclusion14 extends AbstractString {
     @Override
-    public boolean check(String s1, String s2) {
+    public boolean anagrams(String s1, String s2) {
         if (s2.length() < s1.length()) return false;
         int[] counts = new int[26];
         for (int i = 0; i < s1.length(); i++) {
