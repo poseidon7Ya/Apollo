@@ -16,6 +16,10 @@ public interface StrInterface extends CharSequence {
         return false;
     }
 
+    default int palindromeCount(String s) {
+        return 0;
+    }
+
     default Integer longestSubString(String s) {
         return 0;
     }

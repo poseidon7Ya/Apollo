@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.moon.algorithm.base.search.Search;
 import com.moon.algorithm.base.sort.Sort;
 import com.moon.algorithm.base.string.StrInterface;
+import com.moon.algorithm.offer.string.CountSubPalindrome20;
 import com.moon.algorithm.offer.string.IsPalindrome18;
 import com.moon.algorithm.offer.string.ValidPalindrome19;
 
@@ -19,7 +20,8 @@ public class TestClass {
 //        biS(new SingleNonDuplicate70(), c, 0);
 //        str();
 //        biS(new lengthOfLongestSubString16_1(), "cbaebabacd", "abc");
-        palindrome(new ValidPalindrome19(), "abca", "");
+//        palindrome(new ValidPalindrome19(), "abca", "");
+        palindromeCount(new CountSubPalindrome20(), "abca");
     }
 
     public static void biS(StrInterface strInterface, String s, String p) {
@@ -28,6 +30,10 @@ public class TestClass {
 
     public static void palindrome(StrInterface strInterface, String s, String p) {
         System.out.println(JSONObject.toJSONString(strInterface.palindrome(s)));
+    }
+
+    public static void palindromeCount(StrInterface strInterface, String s) {
+        System.out.println(strInterface.palindromeCount(s));
     }
 
     public static void biS(Search search, int[] a, int target) {
