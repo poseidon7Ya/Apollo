@@ -1,9 +1,12 @@
 package com.moon.algorithm.base;
 
 import com.alibaba.fastjson.JSONObject;
+import com.moon.algorithm.base.array.Array;
 import com.moon.algorithm.base.search.Search;
 import com.moon.algorithm.base.sort.Sort;
 import com.moon.algorithm.base.string.StrInterface;
+import com.moon.algorithm.offer.array.TwoSum6;
+import com.moon.algorithm.offer.array.TwoSum6_1;
 import com.moon.algorithm.offer.string.CountSubPalindrome20;
 import com.moon.algorithm.offer.string.IsPalindrome18;
 import com.moon.algorithm.offer.string.ValidPalindrome19;
@@ -21,7 +24,12 @@ public class TestClass {
 //        str();
 //        biS(new lengthOfLongestSubString16_1(), "cbaebabacd", "abc");
 //        palindrome(new ValidPalindrome19(), "abca", "");
-        palindromeCount(new CountSubPalindrome20(), "abca");
+//        palindromeCount(new CountSubPalindrome20(), "abca");
+        array(new TwoSum6_1(), new int[]{3, 2, 4}, 6);
+    }
+
+    public static void array(Array array, int[] nms, int target) {
+        System.out.println(Arrays.toString(array.hash(nms, target)));
     }
 
     public static void biS(StrInterface strInterface, String s, String p) {
