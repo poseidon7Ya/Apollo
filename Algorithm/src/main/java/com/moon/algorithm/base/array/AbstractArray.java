@@ -1,4 +1,4 @@
 package com.moon.algorithm.base.array;
 
-public abstract class AbstractArray implements Array {
+public abstract class AbstractArray implements IArray {
 }

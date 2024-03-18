@@ -1,9 +1,6 @@
 package com.moon.algorithm.offer.search;
 
-import com.moon.algorithm.base.search.Search;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.moon.algorithm.base.search.ISearch;
 
 /**
  * 按权重生成随机数
@@ -13,7 +10,7 @@ import java.util.Map;
  * 有10%的概率选择0、20%的概率选择1、30%的概率选择2、40%的概率
  * 选择3。
  */
-public class PickIndex71 implements Search {
+public class PickIndex71 implements ISearch {
     @Override
     public int search(int[] a, int target) {
         return 0;

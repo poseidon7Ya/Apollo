@@ -1,7 +1,7 @@
 package com.moon.algorithm.offer.search;
 
 import com.moon.algorithm.base.search.BiSearchFstEqOrGe;
-import com.moon.algorithm.base.search.Search;
+import com.moon.algorithm.base.search.ISearch;
 
 /**
  * 面试题68：查找插入位置
@@ -11,11 +11,11 @@ import com.moon.algorithm.base.search.Search;
  * 字。例如，输入数组nums为[1，3，6，8]，如果目标值t为3，则输
  * 出1；如果t为5，则返回2。
  */
-public class SearchInsert68 implements Search {
+public class SearchInsert68 implements ISearch {
 
     @Override
     public int search(int[] a, int target) {
-        Search search = new BiSearchFstEqOrGe();
+        ISearch search = new BiSearchFstEqOrGe();
         int result = search.search(a, target);
         return result == -1 ? a.length : result;
     }

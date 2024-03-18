@@ -1,6 +1,6 @@
 package com.moon.algorithm.offer.search;
 
-import com.moon.algorithm.base.search.Search;
+import com.moon.algorithm.base.search.ISearch;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +11,7 @@ import java.util.Map;
  * 他数字都出现了两次，请找出这个唯一只出现一次的数字。例如，
  * 在数组[1，1，2，2，3，4，4，5，5]中，数字3只出现了一次。
  */
-public class SingleNonDuplicate70 implements Search {
+public class SingleNonDuplicate70 implements ISearch {
     @Override
     public int search(int[] a, int target) {
         return solution3(a, target);

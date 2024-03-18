@@ -1,15 +1,11 @@
 package com.moon.algorithm.base;
 
 import com.alibaba.fastjson.JSONObject;
-import com.moon.algorithm.base.array.Array;
-import com.moon.algorithm.base.search.Search;
-import com.moon.algorithm.base.sort.Sort;
+import com.moon.algorithm.base.array.IArray;
+import com.moon.algorithm.base.search.ISearch;
+import com.moon.algorithm.base.sort.ISort;
 import com.moon.algorithm.base.string.StrInterface;
-import com.moon.algorithm.offer.array.TwoSum6;
 import com.moon.algorithm.offer.array.TwoSum6_1;
-import com.moon.algorithm.offer.string.CountSubPalindrome20;
-import com.moon.algorithm.offer.string.IsPalindrome18;
-import com.moon.algorithm.offer.string.ValidPalindrome19;
 
 import java.util.Arrays;
 
@@ -28,8 +24,8 @@ public class TestClass {
         array(new TwoSum6_1(), new int[]{3, 2, 4}, 6);
     }
 
-    public static void array(Array array, int[] nms, int target) {
-        System.out.println(Arrays.toString(array.hash(nms, target)));
+    public static void array(IArray array, int[] nms, int target) {
+        System.out.println(Arrays.toString(array.sum(nms, target)));
     }
 
     public static void biS(StrInterface strInterface, String s, String p) {
@@ -44,11 +40,11 @@ public class TestClass {
         System.out.println(strInterface.palindromeCount(s));
     }
 
-    public static void biS(Search search, int[] a, int target) {
+    public static void biS(ISearch search, int[] a, int target) {
         System.out.println(search.search(a, target));
     }
 
-    public static void sort(Sort sort, int[] a) {
+    public static void sort(ISort sort, int[] a) {
         System.out.println("====================sort1====================");
         sort.sort(a);
         print(a);

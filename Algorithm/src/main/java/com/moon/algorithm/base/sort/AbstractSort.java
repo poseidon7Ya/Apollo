@@ -1,6 +1,6 @@
 package com.moon.algorithm.base.sort;
 
-public abstract class AbstractSort implements Sort {
+public abstract class AbstractSort implements ISort {
     public void swap(int[] a, int i, int j) {
         if (a.length <= 1) return;
         int temp = a[i];

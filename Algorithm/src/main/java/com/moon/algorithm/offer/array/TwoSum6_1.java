@@ -1,6 +1,7 @@
 package com.moon.algorithm.offer.array;
 
 import com.moon.algorithm.base.array.AbstractArray;
+import com.moon.algorithm.base.solution.IHash;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,9 +14,9 @@ import java.util.Map;
  * 组[1，2，4，6，10]，k的值为8，数组中的数字2与6的和为8，它们
  * 的下标分别为1与3。
  */
-public class TwoSum6_1 extends AbstractArray {
+public class TwoSum6_1 extends AbstractArray implements IHash {
     @Override
-    public int[] hash(int[] a, int target) {
+    public int[] sum(int[] a, int target) {
         int n = a.length;
         if (n < 1) return new int[]{};
         Map<Integer, Integer> map = new HashMap<>();
