@@ -1,5 +1,6 @@
 package com.moon.algorithm.offer.string;
 
+import com.moon.algorithm.base.solution.ITwoPointer;
 import com.moon.algorithm.base.string.AbstractString;
 
 /**
@@ -11,7 +12,7 @@ import com.moon.algorithm.base.string.AbstractString;
  * 由于删除字符'b'或'c'就能得到一个回文字符串，因此输出为
  * true。
  */
-public class ValidPalindrome19 extends AbstractString {
+public class ValidPalindrome19 extends AbstractString implements ITwoPointer {
     @Override
     public boolean palindrome(String s) {
         int lPointer = 0, rPointer = s.length() - 1;

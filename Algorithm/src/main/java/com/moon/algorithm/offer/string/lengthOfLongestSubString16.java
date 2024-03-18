@@ -1,5 +1,7 @@
 package com.moon.algorithm.offer.string;
 
+import com.moon.algorithm.base.solution.IHash;
+import com.moon.algorithm.base.solution.ITwoPointer;
 import com.moon.algorithm.base.string.AbstractString;
 
 import java.util.Collection;
@@ -12,7 +14,7 @@ import java.util.Map;
  * 字符串的长度。例如，输入字符串"babcca"，其最长的不含重复字
  * 符的子字符串是"abc"，长度为3。
  */
-public class lengthOfLongestSubString16 extends AbstractString {
+public class lengthOfLongestSubString16 extends AbstractString implements IHash, ITwoPointer {
     //
 
     @Override

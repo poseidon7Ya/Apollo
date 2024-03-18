@@ -1,5 +1,6 @@
 package com.moon.algorithm.offer.string;
 
+import com.moon.algorithm.base.solution.IHash;
 import com.moon.algorithm.base.string.AbstractString;
 
 import java.util.HashMap;
@@ -21,7 +22,7 @@ import java.util.Map;
  * 个变位词"cba"和"bac"是字符串s1中的子字符串，输出它们在字符
  * 串s1中的起始下标0和5。
  */
-public class CheckInclusion14_1 extends AbstractString {
+public class CheckInclusion14_1 extends AbstractString implements IHash {
     @Override
     public boolean anagrams(String s1, String s2) {
         if (s2.length() < s1.length()) return false;

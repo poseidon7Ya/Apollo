@@ -1,5 +1,6 @@
 package com.moon.algorithm.offer.string;
 
+import com.moon.algorithm.base.solution.ITwoPointer;
 import com.moon.algorithm.base.string.AbstractString;
 
 /**
@@ -9,7 +10,7 @@ import com.moon.algorithm.base.string.AbstractString;
  * saw？"是一个回文字符串，而"race a car"不是回文字符串。
  * <a href="https://leetcode.com/problems/valid-palindrome/submissions/1204353913/">...</a>
  */
-public class IsPalindrome18 extends AbstractString {
+public class IsPalindrome18 extends AbstractString implements ITwoPointer {
     @Override
     public boolean palindrome(String s) {
         int lPointer = 0, rPointer = s.length() - 1;
