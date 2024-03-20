@@ -5,6 +5,8 @@ import com.moon.algorithm.base.array.IArray;
 import com.moon.algorithm.base.search.ISearch;
 import com.moon.algorithm.base.sort.ISort;
 import com.moon.algorithm.base.string.StrInterface;
+import com.moon.algorithm.offer.array.MinSubArrayLen;
+import com.moon.algorithm.offer.array.MinSubArrayLen_1;
 import com.moon.algorithm.offer.array.TwoSum6_1;
 
 import java.util.Arrays;
@@ -21,7 +23,12 @@ public class TestClass {
 //        biS(new lengthOfLongestSubString16_1(), "cbaebabacd", "abc");
 //        palindrome(new ValidPalindrome19(), "abca", "");
 //        palindromeCount(new CountSubPalindrome20(), "abca");
-        array(new TwoSum6_1(), new int[]{3, 2, 4}, 6);
+//        array(new TwoSum6_1(), new int[]{3, 2, 4}, 6);
+        subArray(new MinSubArrayLen_1(), new int[]{5, 1, 4, 3}, 7);
+    }
+
+    public static void subArray(IArray array, int[] nms, int target) {
+        System.out.println(array.subArray(nms, target));
     }
 
     public static void array(IArray array, int[] nms, int target) {

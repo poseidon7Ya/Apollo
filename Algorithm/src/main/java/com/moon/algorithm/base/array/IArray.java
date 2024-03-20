@@ -10,4 +10,8 @@ public interface IArray {
     default List<List<Integer>> sum2(int[] nums, int target) {
         return new ArrayList<>();
     }
+
+    default int subArray(int[] nums, int target) {
+        return 0;
+    }
 }
