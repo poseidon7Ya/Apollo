@@ -1,6 +1,8 @@
 package com.moon.algorithm.base.search;
 
-
+/**
+ * 二分查找，最后一个等于
+ */
 public class BiSearchLstEq extends AbstractSearch {
     @Override
     public int biSearch(int[] a, int n, int target) {

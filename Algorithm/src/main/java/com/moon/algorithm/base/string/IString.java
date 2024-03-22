@@ -3,11 +3,12 @@ package com.moon.algorithm.base.string;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface StrInterface extends CharSequence {
+public interface IString {
 
     default boolean anagrams(String s1, String s2) {
         return false;
     }
+
     default <T> List<T> anagramsList(String s1, String s2) {
         return new ArrayList<>();
     }

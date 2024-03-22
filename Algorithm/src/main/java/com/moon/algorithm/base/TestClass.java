@@ -4,11 +4,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.moon.algorithm.base.array.IArray;
 import com.moon.algorithm.base.search.ISearch;
 import com.moon.algorithm.base.sort.ISort;
-import com.moon.algorithm.base.string.StrInterface;
-import com.moon.algorithm.offer.array.MinSubArrayLen;
-import com.moon.algorithm.offer.array.MinSubArrayLen_1;
+import com.moon.algorithm.base.string.IString;
 import com.moon.algorithm.offer.array.NumSubArrayProductLessThanK;
-import com.moon.algorithm.offer.array.TwoSum6_1;
 
 import java.util.Arrays;
 
@@ -37,15 +34,15 @@ public class TestClass {
         System.out.println(Arrays.toString(array.sum(nms, target)));
     }
 
-    public static void biS(StrInterface strInterface, String s, String p) {
+    public static void biS(IString strInterface, String s, String p) {
         System.out.println(JSONObject.toJSONString(strInterface.longestSubString(s)));
     }
 
-    public static void palindrome(StrInterface strInterface, String s, String p) {
+    public static void palindrome(IString strInterface, String s, String p) {
         System.out.println(JSONObject.toJSONString(strInterface.palindrome(s)));
     }
 
-    public static void palindromeCount(StrInterface strInterface, String s) {
+    public static void palindromeCount(IString strInterface, String s) {
         System.out.println(strInterface.palindromeCount(s));
     }
 
