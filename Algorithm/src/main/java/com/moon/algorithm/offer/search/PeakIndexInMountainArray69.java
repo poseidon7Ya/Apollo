@@ -1,6 +1,6 @@
 package com.moon.algorithm.offer.search;
 
-import com.moon.algorithm.base.search.ISearch;
+import com.moon.algorithm.base.search.IBiSearch;
 
 /**
  * 面试题69：山峰数组的顶部
@@ -10,7 +10,7 @@ import com.moon.algorithm.base.search.ISearch;
  * 的位置。例如，在数组[1，3，5，4，2]中，最大值是5，输出它在
  * 数组中的下标2。
  */
-public class PeakIndexInMountainArray69 implements ISearch {
+public class PeakIndexInMountainArray69 implements IBiSearch {
 
     @Override
     public int search(int[] a, int target) {

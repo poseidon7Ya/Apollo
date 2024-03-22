@@ -1,6 +1,6 @@
 package com.moon.algorithm.base.search;
 
-public abstract class AbstractSearch implements ISearch {
+public abstract class AbstractSearch implements IBiSearch {
 
     public abstract int biSearch(int[] a, int length, int target);
 

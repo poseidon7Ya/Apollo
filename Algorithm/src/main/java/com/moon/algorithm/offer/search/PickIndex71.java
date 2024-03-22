@@ -1,6 +1,6 @@
 package com.moon.algorithm.offer.search;
 
-import com.moon.algorithm.base.search.ISearch;
+import com.moon.algorithm.base.search.IBiSearch;
 
 /**
  * 按权重生成随机数
@@ -10,7 +10,7 @@ import com.moon.algorithm.base.search.ISearch;
  * 有10%的概率选择0、20%的概率选择1、30%的概率选择2、40%的概率
  * 选择3。
  */
-public class PickIndex71 implements ISearch {
+public class PickIndex71 implements IBiSearch {
     @Override
     public int search(int[] a, int target) {
         return 0;

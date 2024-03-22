@@ -2,7 +2,7 @@ package com.moon.algorithm.base;
 
 import com.alibaba.fastjson.JSONObject;
 import com.moon.algorithm.base.array.IArray;
-import com.moon.algorithm.base.search.ISearch;
+import com.moon.algorithm.base.search.IBiSearch;
 import com.moon.algorithm.base.sort.ISort;
 import com.moon.algorithm.base.string.IString;
 import com.moon.algorithm.offer.array.NumSubArrayProductLessThanK;
@@ -46,7 +46,7 @@ public class TestClass {
         System.out.println(strInterface.palindromeCount(s));
     }
 
-    public static void biS(ISearch search, int[] a, int target) {
+    public static void biS(IBiSearch search, int[] a, int target) {
         System.out.println(search.search(a, target));
     }
 

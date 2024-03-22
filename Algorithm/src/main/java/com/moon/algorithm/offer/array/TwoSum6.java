@@ -1,6 +1,7 @@
 package com.moon.algorithm.offer.array;
 
 import com.moon.algorithm.base.array.AbstractArray;
+import com.moon.algorithm.base.search.IBiSearch;
 import com.moon.algorithm.base.solution.ITwoPointer;
 
 /**
@@ -12,7 +13,7 @@ import com.moon.algorithm.base.solution.ITwoPointer;
  * 的下标分别为1与3。
  * <a href="https://leetcode.cn/problems/two-sum/description/">...</a>
  */
-public class TwoSum6 extends AbstractArray implements ITwoPointer {
+public class TwoSum6 extends AbstractArray implements ITwoPointer, IBiSearch {
     @Override
     public int[] sum(int[] a, int target) {
         int n = a.length;

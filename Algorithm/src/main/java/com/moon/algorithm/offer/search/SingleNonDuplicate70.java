@@ -1,9 +1,6 @@
 package com.moon.algorithm.offer.search;
 
-import com.moon.algorithm.base.search.ISearch;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.moon.algorithm.base.search.IBiSearch;
 
 /**
  * 面试题70：排序数组中只出现一次的数字
@@ -11,30 +8,15 @@ import java.util.Map;
  * 他数字都出现了两次，请找出这个唯一只出现一次的数字。例如，
  * 在数组[1，1，2，2，3，4，4，5，5]中，数字3只出现了一次。
  */
-public class SingleNonDuplicate70 implements ISearch {
+public class SingleNonDuplicate70 implements IBiSearch {
     @Override
     public int search(int[] a, int target) {
         return solution3(a, target);
     }
 
-    private int solution1(int[] a, int target) {
-        Map<Integer, Integer> countMap = new HashMap<>();
-        for (int value : a) {
-            if (countMap.containsKey(value)) {
-                Integer count = countMap.get(value);
-                countMap.put(value, count + 1);
-            } else {
-                countMap.put(value, 1);
-            }
-        }
-        for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
-            if (entry.getValue() == 1) return entry.getKey();
-        }
-        return -1;
-    }
-
     /**
      * 异或
+     *
      * @param a
      * @param target
      * @return
