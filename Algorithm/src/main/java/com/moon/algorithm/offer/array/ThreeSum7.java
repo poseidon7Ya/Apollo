@@ -22,7 +22,7 @@ public class ThreeSum7 extends AbstractArray implements ISort, ITwoPointer {
         List<List<Integer>> list = new ArrayList<>();
         if (n < 3) return list;
         Set<List<Integer>> set = new HashSet<>();
-        sort(nums);
+        sort(nums); // sort
         for (int i = 0; i < n; i++) {
             int j = i + 1, k = n - 1;
             while (j < k) {

@@ -3,9 +3,6 @@ package com.moon.algorithm.offer.array;
 import com.moon.algorithm.base.array.AbstractArray;
 import com.moon.algorithm.base.solution.ITwoPointer;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * 解决耗时过长问题
  * 和大于或等于k的最短子数组
@@ -16,9 +13,6 @@ import java.util.Map;
  * 此输出它的长度2。
  */
 public class MinSubArrayLen_1 extends AbstractArray implements ITwoPointer {
-
-    private static int SUM = 0;
-
     @Override
     public int subArray(int[] nums, int target) {
         int n = nums.length;
