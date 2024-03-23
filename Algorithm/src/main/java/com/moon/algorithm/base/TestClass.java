@@ -6,6 +6,7 @@ import com.moon.algorithm.base.search.IBiSearch;
 import com.moon.algorithm.base.sort.ISort;
 import com.moon.algorithm.base.string.IString;
 import com.moon.algorithm.offer.array.NumSubArrayProductLessThanK;
+import com.moon.algorithm.offer.array.SubArraySum;
 
 import java.util.Arrays;
 
@@ -23,7 +24,7 @@ public class TestClass {
 //        palindromeCount(new CountSubPalindrome20(), "abca");
 //        array(new TwoSum6_1(), new int[]{3, 2, 4}, 6);
 //        subArray(new MinSubArrayLen_1(), new int[]{5, 1, 4, 3}, 7);
-        subArray(new NumSubArrayProductLessThanK(), new int[]{10, 5, 2, 6}, 100);
+        subArray(new SubArraySum(), new int[]{1, 1, 1}, 2);
     }
 
     public static void subArray(IArray array, int[] nms, int target) {
