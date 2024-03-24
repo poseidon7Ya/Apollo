@@ -16,13 +16,13 @@ public class SubArraySum extends AbstractArray implements IHash, IAddArray {
 
     @Override
     public int subArray(int[] nums, int target) {
-        Map<Integer, Integer> sumCount = new HashMap<>();
-        sumCount.put(0, 1);
+        Map<Integer, Integer> sumCountMap = new HashMap<>();
+        sumCountMap.put(0, 1);
         int sum = 0, count = 0;
         for (int num : nums) {
             sum += num;
-            count += sumCount.getOrDefault(sum - target, 0);
-            sumCount.put(sum, sumCount.getOrDefault(sum, 0) + 1);
+            count += sumCountMap.getOrDefault(sum - target, 0);
+            sumCountMap.merge(sum, 1, Integer::sum);
         }
         return count;
     }

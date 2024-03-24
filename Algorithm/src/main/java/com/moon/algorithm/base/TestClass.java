@@ -24,7 +24,7 @@ public class TestClass {
 //        palindromeCount(new CountSubPalindrome20(), "abca");
 //        array(new TwoSum6_1(), new int[]{3, 2, 4}, 6);
 //        subArray(new MinSubArrayLen_1(), new int[]{5, 1, 4, 3}, 7);
-        subArray(new SubArraySum(), new int[]{1, 1, 1}, 2);
+        subArray(new SubArraySum(), new int[]{1, 2, 3}, 3);
     }
 
     public static void subArray(IArray array, int[] nms, int target) {
