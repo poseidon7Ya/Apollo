@@ -11,7 +11,7 @@ import com.moon.algorithm.base.solution.ITwoPointer;
  * 点？假设链表中节点的总数为n，那么1≤k≤n。要求只能遍历链表
  * 一次。
  */
-public class removeNthFromEnd extends AbstractLinkedList implements IDummy, ITwoPointer {
+public class RemoveNthFromEnd extends AbstractLinkedList implements IDummy, ITwoPointer {
 
     @Override
     public ListNode delete(ListNode head, int k) {
